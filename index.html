@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuminaCalc Pro | Premium Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="background-animate"></div>
+
+    <div class="container">
+        <div class="theme-panel">
+            <button onclick="setTheme('light')" title="Light Mode">☀️</button>
+            <button onclick="setTheme('dark')" title="Dark Mode">🌙</button>
+            <button onclick="setTheme('deep')" title="Deep Dark">🌑</button>
+        </div>
+
+        <main class="calc-card">
+            <div class="calc-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="mode-label">Standard</span>
+            </div>
+
+            <div class="screen">
+                <div id="prev-op" class="previous-operand"></div>
+                <div id="current-op" class="current-operand">0</div>
+                <div id="preview" class="result-preview"></div>
+            </div>
+
+            <div class="buttons">
+                <button class="btn functional" onclick="clearAll()">AC</button>
+                <button class="btn functional" onclick="deleteLast()">⌫</button>
+                <button class="btn operator" onclick="appendOperator('%')">%</button>
+                <button class="btn operator" onclick="appendOperator('/')">÷</button>
+
+                <button class="btn" onclick="appendNumber('7')">7</button>
+                <button class="btn" onclick="appendNumber('8')">8</button>
+                <button class="btn" onclick="appendNumber('9')">9</button>
+                <button class="btn operator" onclick="appendOperator('*')">×</button>
+
+                <button class="btn" onclick="appendNumber('4')">4</button>
+                <button class="btn" onclick="appendNumber('5')">5</button>
+                <button class="btn" onclick="appendNumber('6')">6</button>
+                <button class="btn operator" onclick="appendOperator('-')">-</button>
+
+                <button class="btn" onclick="appendNumber('1')">1</button>
+                <button class="btn" onclick="appendNumber('2')">2</button>
+                <button class="btn" onclick="appendNumber('3')">3</button>
+                <button class="btn operator" onclick="appendOperator('+')">+</button>
+
+                <button class="btn" onclick="toggleAdvanced()">Adv</button>
+                <button class="btn" onclick="appendNumber('0')">0</button>
+                <button class="btn" onclick="appendNumber('.')">.</button>
+                <button class="btn equal" onclick="compute()">=</button>
+            </div>
+
+            <div id="advanced-panel" class="advanced-panel hidden">
+                <button class="btn adv" onclick="specialFunc('sqrt')">√</button>
+                <button class="btn adv" onclick="specialFunc('pow2')">x²</button>
+                <button class="btn adv" onclick="specialFunc('random')">Rnd</button>
+                <button class="btn adv" onclick="openTool('bmi')">BMI</button>
+            </div>
+        </main>
+
+        <aside class="history-panel">
+            <h3>History</h3>
+            <ul id="history-list"></ul>
+            <button class="clear-history" onclick="clearHistory()">Clear History</button>
+        </aside>
+    </div>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content glass">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
