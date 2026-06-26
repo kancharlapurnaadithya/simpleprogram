@@ -1,10 +1,5 @@
 # 🧮 Simple Calculator
 
-![HTML](https://github.com/kancharlapurnaadithya/simpleprogram/blob/main/index.html)
-![CSS](https://img.shields.io/badge/CSS3-Styling-blue?logo=css3)
-![JavaScript](https://img.shields.io/badge/JavaScript-Logic-yellow?logo=javascript)
-![Responsive](https://img.shields.io/badge/Responsive-Yes-success)
-![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 
 A responsive and interactive **Simple Calculator** developed using **HTML5, CSS3, and JavaScript**. This project performs basic arithmetic calculations with a clean, modern, and user-friendly interface. It demonstrates fundamental front-end web development concepts including DOM manipulation, event handling, and responsive design.
 
