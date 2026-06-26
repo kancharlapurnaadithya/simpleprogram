@@ -1,6 +1,6 @@
 # 🧮 Simple Calculator
 
-![HTML](https://img.shields.io/badge/HTML5-Structure-orange?logo=html5)
+![HTML](https://github.com/kancharlapurnaadithya/simpleprogram/blob/main/index.html)
 ![CSS](https://img.shields.io/badge/CSS3-Styling-blue?logo=css3)
 ![JavaScript](https://img.shields.io/badge/JavaScript-Logic-yellow?logo=javascript)
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-success)
