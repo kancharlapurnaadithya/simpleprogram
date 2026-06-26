@@ -281,13 +281,9 @@ Tested Successfully on
 
 # 📷 Screenshots
 
-Add your screenshots inside the **assets/screenshots** folder.
+(https://github.com/kancharlapurnaadithya/simpleprogram/blob/main/image1.png)
 
-Example:
 
-```markdown
-![Calculator Home](assets/screenshots/calculator-home.png)
-```
 
 ---
 
